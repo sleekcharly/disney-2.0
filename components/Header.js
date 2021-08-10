@@ -5,7 +5,7 @@ import {
   SearchIcon,
   StarIcon
 } from "@heroicons/react/solid";
-import { signIn, signOut, useSession } from "next-auth/client";
+import { getSession, signIn, signOut, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
 
 function Header() {
