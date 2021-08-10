@@ -13,7 +13,7 @@ function Header() {
   const router = useRouter();
 
   return (
-    <div className="sticky bg-[#040714] top-o z-[1000] flex items-center px-10 h-[72px] md:px-12">
+    <header className="sticky bg-[#040714] top-o z-[1000] flex items-center px-10 h-[72px] md:px-12">
       <Image
         src="/images/logo.svg"
         width={80}
@@ -69,7 +69,7 @@ function Header() {
           onClick={signOut}
         />
       )}
-    </div>
+    </header>
   );
 }
 

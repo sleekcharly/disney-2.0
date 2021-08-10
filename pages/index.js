@@ -2,6 +2,7 @@ import { getSession, useSession } from "next-auth/client";
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Slider from "../components/Slider";
 
 export default function Home() {
   // this method is employed because next auth provider has been utilized in _app.js
@@ -15,7 +16,13 @@ export default function Home() {
       </Head>
 
       <Header />
-      {!session ? <Hero /> : <main>APP</main>}
+      {!session ? (
+        <Hero />
+      ) : (
+        <main>
+          <Slider />
+        </main>
+      )}
     </div>
   );
 }
